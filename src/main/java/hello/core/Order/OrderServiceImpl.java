@@ -23,7 +23,7 @@ public class OrderServiceImpl implements OrderService {
 
     // 생성자가 1개일 떄는, @Autowired 생략 가능.
     @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository,  @MainDiscountPolicy DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }
